@@ -93,9 +93,55 @@ print(x)
 print(y)
 print(z)
 
+Output Variables
+The Python print() function is often used to output variables.
 
+Example
+x = "Python is awesome"
+print(x)
 
+In the print() function, you output multiple variables, separated by a comma:
 
+Example
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+You can also use the + operator to output multiple variables:
+
+Example
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
+
+Notice the space character after "Python " and "is ", without them the result would be "Pythonisawesome".
+
+ Global Variables
+
+Global Variables
+Variables that are created outside of a function (as in all of the examples above) are known as global variables.
+
+Global variables can be used by everyone, both inside of functions and outside.
+
+Example
+Create a variable outside of a function, and use it inside the function
+
+x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+
+          Global Keyword
+          we use Global Keyword to make a variable global inside function
+          def myfunc():
+          global x
+          x = "Awesome"
+          myfunc()
+          print("Python is " + x) 
 
 
 
